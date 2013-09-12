@@ -3,6 +3,7 @@ Partsinventory::Application.routes.draw do
   root to: "pages#index"
 
   resources :members
+  resources :items
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
