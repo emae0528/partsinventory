@@ -1,0 +1,20 @@
+<h1>Members</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Handle</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @members.each do |member| %>
+      <tr>
+        <td><%= member.name %></td>
+        <td><%= member.handle %></td>
+        <td>
+        </td>
+      </tr>
+    <% end %> 
+  </tbody>
+</table>

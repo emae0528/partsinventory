@@ -6,4 +6,16 @@ class Member < ActiveRecord::Base
   validates :handle, presence: true, uniqueness: true
 
   has_many :items
+
+  def to_s
+    first_name
+  end
+
+  def name
+    "#{first_name} #{last_name}"
+  end
+
+  def complete_name_with_handle
+    "#{first_name} #{last_name} (#{handle})"
+  end
 end
