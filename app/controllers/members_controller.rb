@@ -16,7 +16,7 @@ class MembersController < ApplicationController
   	@member = Member.new(params[:member])
 		
 		if @member.save
-			redirect_to member_path(params[:id])
+			redirect_to member_path(@member.id)
 		else
 			render :new
 		end
