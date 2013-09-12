@@ -28,7 +28,7 @@ class MembersController < ApplicationController
     @member = Member.find(params[:id])
     @member.destroy
 
-    redirect_to index_path
+    redirect_to members_path
   end
 
     def update
