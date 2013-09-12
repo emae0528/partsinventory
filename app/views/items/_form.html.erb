@@ -5,7 +5,8 @@
 	<%= f.input :price %>
 	<%= f.input :source %>
 	<%= f.input :status, as: :select, collection: Item::STATUS %>
-	<%= f.association :member %>
+  <%= f.association :member %>
+  <hr>
 	<%= f.button :submit %>
 
 <% end %>

@@ -1,0 +1,23 @@
+<h2>Pending Items <small>Shows first 5 pending items</small></h2>
+<hr>
+
+<table class="table table-bordered table-stripped">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Assigned To</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @pending_items.each do |item| %>
+      <tr>
+        <td><%= item.name %></td>
+        <td><%= item.member.handle %></td>
+        <td><%= item.quantity %></td>
+        <td><%= item.price %></td>   
+      </tr>
+    <% end %>
+  </tbody>
+</table>

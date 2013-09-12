@@ -1,6 +1,8 @@
 Partsinventory::Application.routes.draw do
 
-  root to: "pages#index"
+  root to: "pages#dashboard"
+
+  get "/dashboard", to: "pages#dashboard", as: :dashboard
 
   resources :members
   resources :items

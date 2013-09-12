@@ -6,17 +6,10 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body class="container">
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-  <ul class="nav ">
-	<li><%= link_to "Members Data",members_path %></li>
-	<li><%= link_to "Add Member",new_member_path %></li>
-	<li><%= link_to "Items Data",items_path %></li>
-	<li><%= link_to "Add Item",new_item_path %></li>
-    </ul>
-<%= yield %>
-</div>
-</div>
+<body class="">
+  <%= render partial: "shared/nav" %>
+  <div id="main" class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
