@@ -21,7 +21,7 @@
         <td><%= item.status %></td>
         <td><%= item.member %></td>
         <td>
-          <%= link_to "Delete", item_path(item.id), :method => :delete %>
+          <%= link_to "Delete", item_path(item.id), :method => :delete, confirm: "Are you sure?" %>
           <%= link_to "Edit", edit_item_path(item.id) %>
           </td>
       </tr>
