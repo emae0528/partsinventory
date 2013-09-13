@@ -1,0 +1,21 @@
+<h1>items</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Handle</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.name %></td>
+        <td>
+          <%= link_to "Delete", item_path(item.id), :method => :delete %>
+          <%= link_to "Edit", edit_item_path(item.id) %>
+          </td>
+      </tr>
+    <% end %> 
+  </tbody>
+</table>
