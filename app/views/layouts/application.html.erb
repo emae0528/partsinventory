@@ -7,7 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<body class="container">
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+  <ul class="nav ">
+	<li><%= link_to "Members Data",members_path %></li>
+	<li><%= link_to "Add Member",new_member_path %></li>
+	<li><%= link_to "Items Data",items_path %></li>
+	<li><%= link_to "Add Item",new_item_path %></li>
+    </ul>
 <%= yield %>
 
 </body>
