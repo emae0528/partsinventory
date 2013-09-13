@@ -1,3 +1,14 @@
 #main {
   margin-top: 50px;
 }
+
+.navbar{
+	margin-left: 130px;
+	margin-top: -70px;
+}
+
+.logo img{
+	width: 130px;
+	height: 100px;
+
+}
