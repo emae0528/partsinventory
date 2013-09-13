@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body id="bg">
-<div class="logo"><img src="./assets/skyeye.png"></div>
+  <div class="logo"><%= image_tag "skyeye.jpg" %></div>
   <%= render partial: "shared/nav" %>
   <div id="main" class="container">
     <%= yield %>
