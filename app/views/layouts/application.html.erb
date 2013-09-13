@@ -6,7 +6,6 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 <body class="container">
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
@@ -17,6 +16,7 @@
 	<li><%= link_to "Add Item",new_item_path %></li>
     </ul>
 <%= yield %>
-
+</div>
+</div>
 </body>
 </html>
