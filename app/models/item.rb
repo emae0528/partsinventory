@@ -11,10 +11,9 @@ class Item < ActiveRecord::Base
 
   belongs_to :member
 
-  scope :recent_pending, lambda { where(:status => "Pending").limit(5) }
-  scope :recent_need, lambda { where(:status => "Need").limit(5) }
-  scope :recent_pending, lambda { where(:status => "Delivered").limit(5) }
-  scope :recent_pending, lambda { where(:status => "Order Complete").limit(5) }
-  
+  scope :recent_pending, lambda { where(:status => "Pending") }
+  scope :recent_need, lambda { where(:status => "Need") }
+  scope :recent_order, lambda { where(:status => "Delivered")}
+  scope :recent_delivered, lambda { where(:status => "Order Complete") }
 
 end
