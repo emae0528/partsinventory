@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-    @pending_items = Item.where(:status => "Pending").first(5)
+    @pending_items = Item.recent_pending
   end
 
 end

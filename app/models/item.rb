@@ -10,4 +10,11 @@ class Item < ActiveRecord::Base
   validates :status, presence: true, inclusion: { in: STATUS }
 
   belongs_to :member
+
+  scope :recent_pending, lambda { where(:status => "Pending").limit(5) }
+  scope :recent_need, lambda { where(:status => "Need").limit(5) }
+  scope :recent_pending, lambda { where(:status => "Delivered").limit(5) }
+  scope :recent_pending, lambda { where(:status => "Order Complete").limit(5) }
+  
+
 end

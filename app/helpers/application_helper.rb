@@ -9,4 +9,12 @@ module ApplicationHelper
 		else "white" end
 	end
 
+	def status_options
+		str = ""
+		Item::STATUS.each do |s|
+			str << ("<option>#{s}</option>")
+		end
+		str
+	end
+
 end
