@@ -18,7 +18,7 @@
         <td><%= item.quantity %></td>
         <td><%= item.price %></td>
         <td><%= item.source %></td>
-        <td><%= item.status %></td>
+        <td style="color: white;background-color: <%= get_color_of_status(item.status) %>"><%= item.status %></td>
         <td><%= item.member %></td>
         <td>
           <%= link_to "Delete", item_path(item.id), :method => :delete, confirm: "Are you sure?" %>
