@@ -17,3 +17,7 @@ group :production do
   gem 'thin'
   gem 'pg'
 end
+
+group :development do
+  gem 'sqlite3'
+end
