@@ -8,4 +8,5 @@ module ApplicationHelper
 		when "Delivered" then "blue"
 		else "white" end
 	end
+
 end
